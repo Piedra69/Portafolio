@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mateo Roca — Programador & Diseñador Web</title>
+  <meta name="description" content="Soy Mateo Roca, programador y diseñador web. Diseño y desarrollo sitios rápidos, accesibles y con buen gusto.">
+  <meta property="og:title" content="Mateo Roca — Programador & Diseñador Web" />
+  <meta property="og:description" content="Sitios rápidos, accesibles y con buen gusto." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0c0c0e" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header class="nav">
+    <a href="#" class="brand" aria-label="Inicio">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span class="brand__text">Mateo<span class="accent">Roca</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto" class="pill pill--primary">Contacto</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Cambiar tema" title="Modo claro/oscuro">
+        <span class="icon-sun" aria-hidden="true">☀️</span>
+        <span class="icon-moon" aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero__grid container">
+      <div class="hero__copy">
+        <p class="eyebrow">Programador · Diseñador Web</p>
+        <h1 class="title-xl">
+          Hola, soy <span class="accent-underline">Mateo Roca</span><br/>
+          creo experiencias web <span class="grad">rápidas y hermosas</span>.
+        </h1>
+        <p class="lead">
+          Desarrollo interfaces limpias, accesibles y efectivas. Me enfoco en performance, diseño claro y resultados medibles.
+        </p>
+
+        <div class="cta">
+          <a href="#proyectos" class="btn btn--primary magnetic">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+        </div>
+
+        <ul class="trust">
+          <li>Tiempo de carga &lt; 1s</li>
+          <li>Accesibilidad AA</li>
+          <li>SEO técnico</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <!-- SVG abstracto ligero -->
+        <svg class="blob" viewBox="0 0 600 600" width="100%" height="100%" role="img" aria-label="Ilustración abstracta">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--grad-a)"/>
+              <stop offset="100%" stop-color="var(--grad-b)"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#g1)">
+            <animate attributeName="d" dur="12s" repeatCount="indefinite"
+              values="
+              M454,340Q405,430,318,470Q231,510,158,455Q85,400,77,300Q69,200,149,136Q229,72,327,97Q425,122,462,211Q499,300,454,340Z;
+              M450,327Q401,414,312,450Q223,486,166,423Q109,360,88,280Q67,200,151,154Q235,108,319,121Q403,134,452,217Q501,300,450,327Z;
+              M454,340Q405,430,318,470Q231,510,158,455Q85,400,77,300Q69,200,149,136Q229,72,327,97Q425,122,462,211Q499,300,454,340Z" />
+          </path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="section" id="proyectos" aria-labelledby="h-proyectos">
+    <div class="container">
+      <div class="section__head">
+        <h2 id="h-proyectos" class="title-l">Proyectos destacados</h2>
+        <p class="muted">Algunos trabajos recientes. Puedo compartir más casos a pedido.</p>
+      </div>
+
+      <div class="grid cards reveal">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card__media" role="img" aria-label="Previsualización Ecommerce">
+            <div class="tag">Ecommerce</div>
+          </div>
+          <div class="card__body">
+            <h3 class="title-m">Tienda minimalista</h3>
+            <p>Arquitectura JAMstack, checkout ágil y CLS ~0.01. Diseño limpio orientado a conversión.</p>
+          </div>
+          <div class="card__footer">
+            <a class="pill" href="#" aria-label="Ver demo Tienda minimalista">Demo</a>
+            <a class="pill pill--ghost" href="#" aria-label="Ver código Tienda minimalista">Código</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__media card__media--2" role="img" aria-label="Previsualización Dashboard">
+            <div class="tag">Dashboard</div>
+          </div>
+          <div class="card__body">
+            <h3 class="title-m">Panel analítico</h3>
+            <p>Data-viz accesible, atajos de teclado y dark mode nativo. Lighthouse 98/100.</p>
+          </div>
+          <div class="card__footer">
+            <a class="pill" href="#">Demo</a>
+            <a class="pill pill--ghost" href="#">Código</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__media card__media--3" role="img" aria-label="Previsualización Branding">
+            <div class="tag">Branding + Web</div>
+          </div>
+          <div class="card__body">
+            <h3 class="title-m">Marca & landing</h3>
+            <p>Identidad visual + landing ultra-ligera (30KB CSS/JS). TTFB bajo y tipografía a medida.</p>
+          </div>
+          <div class="card__footer">
+            <a class="pill" href="#">Demo</a>
+            <a class="pill pill--ghost" href="#">Código</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section" id="servicios" aria-labelledby="h-servicios">
+    <div class="container">
+      <div class="section__head">
+        <h2 id="h-servicios" class="title-l">Servicios</h2>
+        <p class="muted">Soluciones integrales para tu presencia digital.</p>
+      </div>
+
+      <div class="grid features reveal">
+        <article class="feature">
+          <h3 class="title-s">Diseño de interfaces</h3>
+          <p>UI/UX con foco en claridad, consistencia visual y accesibilidad real (WCAG 2.2).</p>
+        </article>
+        <article class="feature">
+          <h3 class="title-s">Desarrollo web</h3>
+          <p>Front-end moderno (HTML, CSS, JS) y performance obsesiva. Integraciones a medida.</p>
+        </article>
+        <article class="feature">
+          <h3 class="title-s">Optimización & SEO</h3>
+          <p>Mejora de Core Web Vitals, estructura semántica, datos estructurados y indexación.</p>
+        </article>
+        <article class="feature">
+          <h3 class="title-s">Branding</h3>
+          <p>Sistemas tipográficos, paletas cromáticas y guías de estilo listas para escalar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="section" id="sobre-mi" aria-labelledby="h-sobremi">
+    <div class="container about reveal">
+      <div class="about__img" role="img" aria-label="Foto de Mateo (placeholder)"></div>
+      <div class="about__copy">
+        <h2 id="h-sobremi" class="title-l">Sobre mí</h2>
+        <p>
+          Soy Mateo Roca, programador y diseñador web. Combino estética y rendimiento para crear
+          sitios que comunican y convierten. Trabajo con equipos y clientes que valoran el
+          detalle, la velocidad y la accesibilidad.
+        </p>
+        <ul class="list-check">
+          <li>Pixel-perfect + código limpio</li>
+          <li>Diseño responsive real (mobile-first)</li>
+          <li>Entrega documentada y mantenible</li>
+        </ul>
+        <div class="cta">
+          <a href="#contacto" class="btn btn--primary magnetic">Disponibilidad</a>
+          <a href="#" class="btn btn--ghost">Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section" id="contacto" aria-labelledby="h-contacto">
+    <div class="container">
+      <div class="contact reveal">
+        <div class="contact__copy">
+          <h2 id="h-contacto" class="title-l">Construyamos algo bueno</h2>
+          <p class="lead">Cuéntame tu idea, plazos y objetivos. Te respondo con una propuesta clara.</p>
+          <div class="chips">
+            <a class="chip" href="mailto:hola@mateoroca.dev">hola@mateoroca.dev</a>
+            <a class="chip" href="https://wa.me/59170000000" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a class="chip" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact__form" action="https://formspree.io/f/your-id" method="POST">
+          <label>
+            <span>Nombre</span>
+            <input name="nombre" type="text" placeholder="Tu nombre" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" placeholder="tu@email.com" required>
+          </label>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="mensaje" rows="5" placeholder="Proyecto, objetivos, plazos..." required></textarea>
+          </label>
+          <button class="btn btn--primary magnetic" type="submit">Enviar</button>
+          <p class="form-note">Uso de demo — reemplaza el endpoint por tu servicio de formularios.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <p>© <span id="y"></span> Mateo Roca. Hecho con HTML · CSS · JS.</p>
+      <div class="footer__links">
+        <a href="#inicio">Arriba ↑</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
