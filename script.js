@@ -2,7 +2,6 @@
 document.getElementById('y').textContent = new Date().getFullYear();
 
 // Toggle tema con persistencia
-const root = document.documentElement;
 const themeToggle = document.getElementById('themeToggle');
 const saved = localStorage.getItem('theme');
 if (saved === 'light') document.body.classList.add('light');
